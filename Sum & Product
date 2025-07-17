@@ -1,0 +1,20 @@
+let numbers = prompt("Enter the array of 'n' numbers from 1 to n:");
+console.log(numbers);
+
+let array = [];
+
+for(let num = 1; num <= numbers; num++){
+    console.log(num);
+    array[num - 1] = num;
+}
+console.log(array);
+
+let add = array.reduce((res, curr) => {
+    return res + curr;
+})
+console.log(add);
+
+let prod = array.reduce((res, curr) => {
+    return res * curr;
+})
+console.log(prod);
